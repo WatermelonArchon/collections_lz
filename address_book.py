@@ -15,8 +15,11 @@ if n==1:
     #z=int(input('Введите номер строки с нужным человеком: '))
     zz=input('Введите человека: ')
     dd=input('Введите новый адрес: ')
+    
     for k, zzz in d.items():
-        if zzz == zz:
+        print(zzz.values())
+        print(k)
+        if zz in zzz.values():
             z=k
             break
     print(z)
