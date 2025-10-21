@@ -12,19 +12,16 @@ if n==1:
     kk=0
     z=0
     zzz=''
-    #z=int(input('Введите номер строки с нужным человеком: '))
     zz=input('Введите человека: ')
     dd=input('Введите новый адрес: ')
     
     for k, zzz in d.items():
-        print(zzz.values())
-        print(k)
         if zz in zzz.values():
             z=k
             break
     print(z)
-    #d[z].update({'Адрес': dd})   
-#print('Изменённый словарь:\n', d)
+    d[z].update({'Адрес': dd})   
+print('Изменённый словарь:\n', d)
 if n==2:
     z=int(input('Введите номер строки: '))
     d.pop(z)
