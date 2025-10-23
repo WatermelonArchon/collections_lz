@@ -17,7 +17,6 @@ if n==1:
         if zz in zzz.values():
             z=k
             break
-    print(z)
     d[z].update({'Адрес': dd})   
     print('Изменённый словарь:\n', d)
 if n==2:
